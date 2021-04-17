@@ -1,0 +1,54 @@
+section {
+	width: 100vw;
+}
+
+section h1 {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.dark-section {
+	background-color: darkgray;
+}
+
+.light-section {
+	background-color: lightgray;
+}
+
+.cover-img-carousel {
+	position: relative;
+	width: 100vw;
+	height: 30vw;
+}
+
+.carousel-container {
+	display: flex;
+	transform: translateX(0);
+	transition: transform 0.5s ease;
+}
+
+.carousel-container img {
+	width: 100vw;
+	height: 30vw;
+}
+
+.carousel-controls {
+	width: 100vw;
+	position: absolute;
+	top: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.carousel-controls .btn {
+	background: transparent;
+	border: none;
+	padding: 20px;
+	cursor: pointer;
+}
+
+.carousel-controls .btn:focus {
+	outline: none;
+}

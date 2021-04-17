@@ -1,9 +1,22 @@
 
+<link rel="stylesheet" href="/css/home.css">
+
 <%- include("partials/header") -%>
 
 <section id="cover" class="dark-section">
-  <h1>封面圖</h1>
-  
+  <div class="cover-img-carousel">
+    <div class="carousel-container" id="imgs">
+      <img src="/images/cover-img-1.jpg" alt="cover-img-1">
+      <img src="/images/cover-img-2.jpg" alt="cover-img-2">
+      <img src="/images/cover-img-3.jpg" alt="cover-img-3">
+      <img src="/images/cover-img-4.jpg" alt="cover-img-4">
+    </div>
+    <div class="carousel-controls">
+      <button class="btn" id="prev"><span style="color: rgba(255, 255, 255, 0.5);"><i class="fas fa-chevron-left fa-3x"></i></span></button>
+      <button class="btn" id="next"><span style="color: rgba(255, 255, 255, 0.5);"><i class="fas fa-chevron-right fa-3x"></i></span></button>
+    </div>
+  </div>
+
 </section>
 
 <section id="about" class="light-section"><h1>關於我們</h1></section>
@@ -15,3 +28,5 @@
 
 
 <%- include("partials/footer") -%>
+
+<script src="/js/home.js"></script>
