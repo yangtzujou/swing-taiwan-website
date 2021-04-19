@@ -20,8 +20,8 @@ app.get("/about", function(req, res) {
   res.render("about");
 })
 
-app.get("/experience", function(req, res) {
-  res.render("experience");
+app.get("/taste", function(req, res) {
+  res.render("taste");
 })
 
 app.get("/course", function(req, res) {
