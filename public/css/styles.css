@@ -3,7 +3,8 @@
 }
 
 :root {
-	--main-color: rgb(60, 40, 150);
+	--main-dark-color: rgb(60, 40, 150);
+	--main-light-color: rgb(248, 245, 255);
 }
 
 body {
@@ -11,8 +12,10 @@ body {
 	font-family: "Noto Sans TC", sans-serif;
 }
 
+/* header & navbar */
+
 header {
-	background-color: var(--main-color);
+	background-color: var(--main-dark-color);
 	padding: 10px;
 	position: fixed;
 	top: 0;
@@ -53,8 +56,10 @@ nav ul li {
 	min-height: calc(100vh - 70px - 64px);
 }
 
+/* footer */
+
 footer {
-	background-color: var(--main-color);
+	background-color: var(--main-dark-color);
 	color: lightgray;
 	padding: 10px;
 	text-align: center;
@@ -79,4 +84,25 @@ footer {
 footer p {
 	margin: 5px 0 0 0;
 	font-size: 0.6rem;
+}
+
+/* buttons */
+
+.btn {
+	margin: 1rem;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+	border-radius: 0.4rem;
+	border: none;
+	box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.light-btn {
+	background-color: var(--main-light-color);
+	color: black;
+}
+
+.dark-btn {
+	background-color: var(--main-dark-color);
+	color: white;
 }
