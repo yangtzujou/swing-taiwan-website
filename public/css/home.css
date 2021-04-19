@@ -39,6 +39,7 @@ section h1 {
 	width: 100%;
 	position: absolute;
 	top: 50%;
+	transform: translateY(-50%);
 	display: flex;
 	justify-content: space-between;
 }
@@ -110,6 +111,7 @@ section h1 {
 
 .taste-info p {
 	margin: 0;
+	line-height: 1.6;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
