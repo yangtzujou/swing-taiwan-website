@@ -3,8 +3,8 @@
 }
 
 :root {
-	--main-dark-color: rgb(60, 40, 150);
-	--main-light-color: rgb(248, 245, 255);
+	--main-dark-color: rgb(89, 56, 30);
+	--main-light-color: rgb(214, 193, 176);
 }
 
 body {
@@ -97,12 +97,27 @@ footer p {
 	box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
+.btn {
+	cursor: pointer;
+}
+
 .light-btn {
-	background-color: var(--main-light-color);
+	background-color: white;
 	color: black;
 }
 
 .dark-btn {
 	background-color: var(--main-dark-color);
 	color: white;
+}
+
+.transparent-btn {
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+}
+
+.transparent-btn:hover {
+	background-color: white;
+	color: black;
 }
