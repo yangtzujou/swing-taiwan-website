@@ -6,7 +6,7 @@ section h1 {
 	margin: 0;
 	padding: 1rem;
 	text-align: center;
-	font-size: 2rem;
+	/* font-size: 2rem; */
 }
 
 .dark-section {
@@ -47,6 +47,7 @@ section h1 {
 
 .carousel-controls .control-btn {
 	background: transparent;
+	color: rgba(255, 255, 255, 0.5);
 	border: none;
 	padding: 1rem;
 	cursor: pointer;
@@ -112,7 +113,6 @@ section h1 {
 
 .taste-info p {
 	margin: 0;
-	line-height: 1.6;
 }
 
 #course {
@@ -152,7 +152,8 @@ section h1 {
 	transition: height 0.5s ease;
 }
 
-.style:hover .style-overlay {
+.style:hover .style-overlay,
+.style:active .style-overlay {
 	height: 100%;
 }
 
@@ -168,6 +169,70 @@ section h1 {
 
 .style-overlay .text p {
 	font-size: 0.8rem;
+}
+
+.slider-bg-container {
+	width: 100vw;
+	height: 70vh;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.slider-bg-overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slider-container {
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -45%);
+	overflow: hidden;
+	z-index: 1;
+}
+
+.slide {
+	opacity: 0;
+	width: 100vw;
+	height: 70vh;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: -9.8vh; /* calc(- ((70vh / 2) - (70vh * 80% * 45%))) */
+	left: -10vw;
+	transition: 0.4s ease;
+}
+
+.slide.active {
+	opacity: 1;
+}
+
+.slider-bg-container .control-btn {
+	background: transparent;
+	color: white;
+	border: 2px solid var(--main-light-color);
+	padding: 1rem;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-45%);
+}
+
+.slider-bg-container .control-btn:focus {
+	outline: none;
+}
+
+.slider-bg-container .control-btn#left {
+	left: calc(10vw - 45px);
+}
+
+.slider-bg-container .control-btn#right {
+	right: calc(10vw - 45px);
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
