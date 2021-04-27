@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap");
+
+.about-container {
+	max-width: 768px;
+	margin: auto;
+	padding: 20px;
+}
+
+.short-intro {
+	line-height: 1.6;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+.event {
+	margin: 1rem 0;
+}
+
+.event .subtitle-box {
+	max-width: 100%;
+	height: 84px;
+}
+
+.event .year {
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: "Josefin Sans", sans-serif;
+	padding: 0 10px;
+}
+
+.event .subtitle {
+	display: inline-block;
+	margin: 1rem 0;
+}
+
+.event.right {
+	text-align: right;
+}
+
+.event .bottomline {
+	width: calc(100% - 100px);
+	height: 1px;
+	background-color: black;
+	margin-bottom: 1rem;
+}
+
+.event.left .bottomline {
+	margin-left: 100px;
+}
+
+.event.right .bottomline {
+	margin-right: 100px;
+}
+
+/* scroll animation */
+
+.event.left .subtitle-box .year {
+	transform: translateX(-1000%);
+}
+
+.event.left .subtitle-box .subtitle,
+.event.left .subtitle-box .bottomline {
+	transform: translateX(500%);
+}
+
+.event.right .subtitle-box .year {
+	transform: translateX(1000%);
+}
+
+.event.right .subtitle-box .subtitle,
+.event.right .subtitle-box .bottomline {
+	transform: translateX(-500%);
+}
+
+.event.left .subtitle-box.show .year,
+.event.left .subtitle-box.show .subtitle,
+.event.left .subtitle-box.show .bottomline,
+.event.right .subtitle-box.show .year,
+.event.right .subtitle-box.show .subtitle,
+.event.right .subtitle-box.show .bottomline {
+	transform: translateX(0);
+	transition: transform 1s ease-out;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}

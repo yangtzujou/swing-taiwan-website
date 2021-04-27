@@ -12,6 +12,14 @@ body {
 	font-family: "Noto Sans TC", sans-serif;
 }
 
+.content-container {
+	margin-top: 81.23px;
+	min-height: calc(100vh - 90px - 64px);
+	overflow: hidden;
+	background-color: var(--main-light-color);
+	background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+}
+
 h1 {
 	font-size: 2rem;
 	margin: 0;
@@ -21,15 +29,13 @@ h1 {
 
 p {
 	font-size: 1rem;
+	margin: 0;
 	line-height: 1.8;
 }
 
-.content-container {
-	margin-top: 81.23px;
-	min-height: calc(100vh - 90px - 64px);
-	overflow: hidden;
-	background-color: var(--main-light-color);
-	background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+::selection {
+	color: var(--main-light-color);
+	background: var(--main-dark-color);
 }
 
 /* header & navbar */
