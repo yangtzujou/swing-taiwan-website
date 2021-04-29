@@ -7,11 +7,53 @@
   <h1>報名體驗</h1>
 
   <div class="flex-container">
-    <div class="box box1">
-
+    <div class="box info">
+      <h2>現在就來體驗！</h2>
+      <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fas fa-star"></i></span>新手報到時間：20:15 – 20:25</li>
+        <li><span class="fa-li"><i class="fas fa-star"></i></span>新手體驗時間：20:30 – 21:00</li>
+        <li><span class="fa-li"><i class="fas fa-star"></i></span>地址：台北市信義區松勤街50號 </li>
+        <li><span class="fa-li"><i class="fas fa-star"></i></span>課程角色選擇： Swing Dance 雙人舞中，有 Leader 領舞者與 Follower 跟舞者兩種角色，目前 Leader 多為男性，Follower 多為女性。但隨著時代演變，大家都可以隨心所欲地選擇喜歡的角色，享受舞蹈唷！</li>  
+      </ul>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0619803648965!2d121.55968847919289!3d25.03197058405175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb5d0ddaa87%3A0x79dcdea403f23f82!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5p2-5Yuk6KGXNTDomZ8!5e0!3m2!1szh-TW!2stw!4v1619690939336!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    <div class="box box2">
+    <div class="box form">
+      <form action="/taste">
 
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="gender">性別：</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">男</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">女</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">非二元性別</label><br><br>
+
+        <label for="phone">手機：</label>
+        <input type="tel" id="phone" name="phone" placeholder="0912-345-678" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br><br>
+
+        <label for="email">電子信箱：</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="sessions">選擇場次：</label>
+        <select name="sessions" id="sessions">
+          <option value="0507">2021/05/07（五）</option>
+          <option value="0514">2021/05/14（五）</option>
+          <option value="0521">2021/05/21（五）</option>
+          <option value="0528">2021/05/28（五）</option>
+        </select>
+        <br><br>
+
+        <label for="role">報名角色：</label>
+        <input type="radio" id="leader" name="role" value="leader">
+        <label for="leader">Leader</label>
+        <input type="radio" id="follower" name="role" value="follower">
+        <label for="follower">Follower</label><br><br>
+
+        <button type="submit" value="submit" class="btn dark-btn">我要報名體驗</button>
+      </form>
     </div>
   </div>
 

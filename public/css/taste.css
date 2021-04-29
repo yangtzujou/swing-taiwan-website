@@ -4,12 +4,37 @@
 
 .box {
 	width: 50%;
-	height: 300px;
-	background-color: purple;
+	padding: 0 20px;
 }
 
-.box:nth-child(even) {
-	background: pink;
+.box.form {
+	padding: 20px;
+	max-width: 400px;
+}
+
+.form form {
+	width: 100%;
+	padding: 20px;
+	border-radius: 30px;
+	border: 1px solid var(--main-dark-color);
+	display: inline-block;
+}
+
+.info h2 {
+	margin-top: 0;
+}
+
+.info ul > li {
+	margin: 0 0 10px 0;
+}
+
+.info iframe {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+}
+
+.form .btn {
+	float: right;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -18,6 +43,12 @@
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+	.flex-container {
+		display: block;
+	}
+	.box {
+		width: 100%;
+	}
 }
 
 /* Medium devices (tablets, less than 992px) */
