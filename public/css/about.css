@@ -83,8 +83,38 @@
 	transition: transform 1s ease-out;
 }
 
+.intro-wrapper img {
+	width: 40%;
+}
+
+.intro-wrapper .swing-img1 {
+	float: left;
+	margin-right: 15px;
+}
+
+.intro-wrapper .swing-img2 {
+	float: right;
+	margin-left: 15px;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+	.intro-wrapper img {
+		width: 100%;
+	}
+
+	.intro-wrapper .swing-img1 {
+		clear: left;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.intro-wrapper .swing-img2 {
+		clear: right;
+		margin-left: 0;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 }
 
 /* Small devices (landscape phones, less than 768px) */
