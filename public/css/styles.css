@@ -15,7 +15,7 @@ body {
 
 .content-container {
 	margin-top: 81.23px;
-	min-height: calc(100vh - 90px - 64px);
+	min-height: calc(100vh - 81.23px - 68px);
 	overflow: hidden;
 	background-color: var(--main-light-color);
 	background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
@@ -98,7 +98,7 @@ p {
 	float: right;
 	display: none;
 	padding: 10px;
-	margin: 17px 0;
+	margin: 13px 0;
 	color: var(--main-light-color);
 }
 
