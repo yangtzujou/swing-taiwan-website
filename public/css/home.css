@@ -237,7 +237,7 @@ section {
 	max-width: 768px;
 	margin: auto;
 	padding: 30px 80px;
-	background-color: rgba(89, 56, 30, 0.5);
+	background-color: var(--main-transparent-color);
 	border-radius: 20px;
 	position: relative;
 }

@@ -5,6 +5,7 @@
 :root {
 	--main-dark-color: rgb(89, 56, 30);
 	--main-light-color: rgb(214, 193, 176);
+	--main-transparent-color: rgba(89, 56, 30, 0.5);
 }
 
 body {

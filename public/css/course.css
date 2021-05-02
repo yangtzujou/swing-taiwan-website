@@ -1,3 +1,47 @@
+.week-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	column-gap: 10px;
+	overflow-x: scroll;
+}
+
+.day-flex {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	min-width: 95px;
+	text-align: center;
+}
+
+.day {
+	background-color: var(--main-transparent-color);
+	padding: 5px;
+}
+
+.course {
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px 0;
+}
+
+.course h2 {
+	margin: 0;
+}
+
+.course p {
+	font-size: 0.8rem;
+}
+
+.status {
+	color: #125a12;
+}
+
+.status.open {
+	color: #941616;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 }
