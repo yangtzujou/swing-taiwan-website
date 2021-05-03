@@ -12,47 +12,77 @@
 	background-position: center;
 }
 
-.div1 {
+.collaboration1 {
 	grid-area: 1 / 1 / 3 / 4;
 	background-image: url("/images/collaboration-img-1.jpeg");
 }
 
-.div2 {
+.collaboration2 {
 	grid-area: 1 / 4 / 3 / 6;
 	background-image: url("/images/collaboration-img-2.jpeg");
 }
 
-.div3 {
+.collaboration3 {
 	grid-area: 1 / 6 / 4 / 9;
 	background-image: url("/images/collaboration-img-3.jpeg");
 }
 
-.div4 {
+.collaboration4 {
 	grid-area: 3 / 1 / 7 / 3;
-	background-image: url("/images/collaboration-img-9.jpeg");
+	background-image: url("/images/collaboration-img-6.jpeg");
 }
 
-.div5 {
+.collaboration5 {
 	grid-area: 3 / 3 / 5 / 6;
 	background-image: url("/images/collaboration-img-7.jpeg");
 }
 
-.div6 {
+.collaboration6 {
 	grid-area: 5 / 3 / 7 / 6;
 	background-image: url("/images/collaboration-img-8.jpeg");
 }
 
-.div7 {
+.collaboration7 {
 	grid-area: 4 / 6 / 7 / 9;
-	background-image: url("/images/collaboration-img-6.jpeg");
+	background-image: url("/images/collaboration-img-9.jpeg");
+}
+
+.collaboration-overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: relative;
+}
+
+.text {
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-align: center;
+}
+
+.grid-container > div:hover .collaboration-overlay {
+	visibility: hidden;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+	.grid-container {
+		display: block;
+	}
+	.grid-container > div {
+		margin-bottom: 10px;
+	}
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+	.text h2 {
+		font-size: 1.2rem;
+	}
 }
 
 /* Medium devices (tablets, less than 992px) */
