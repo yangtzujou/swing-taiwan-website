@@ -83,16 +83,40 @@
 
 .intro-wrapper .swing-img1 {
 	float: left;
-	margin-right: 15px;
+	margin-right: 20px;
 }
 
 .intro-wrapper .swing-img2 {
 	float: right;
-	margin-left: 15px;
+	margin-left: 20px;
+}
+
+.intro-wrapper p {
+	text-indent: 2rem;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+	.event .year {
+		display: none;
+	}
+
+	.event .subtitle {
+		font-size: 1.2rem;
+	}
+
+	.event .bottomline {
+		width: 100%;
+	}
+
+	.event.left .bottomline {
+		margin-left: 0;
+	}
+
+	.event.right .bottomline {
+		margin-right: 0;
+	}
+
 	.intro-wrapper img {
 		width: 100%;
 	}
