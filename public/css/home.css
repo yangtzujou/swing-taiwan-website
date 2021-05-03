@@ -73,13 +73,13 @@ section {
 	font-size: 0.8rem;
 }
 
-.intro-video .intro-video-wrap {
+.intro-video-wrap {
 	width: 100%;
-	padding-bottom: 56.25%;
+	aspect-ratio: 16/9;
 	position: relative;
 }
 
-.intro-video .intro-video-wrap iframe {
+.intro-video-wrap iframe {
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -337,7 +337,7 @@ section {
 	.intro-text {
 		padding: 0;
 	}
-	.intro-video .intro-video-wrap {
+	.intro-video-wrap {
 		margin: 1rem 0;
 	}
 }
