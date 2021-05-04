@@ -1,8 +1,9 @@
 .week-flex {
 	display: flex;
 	flex-direction: row;
-	column-gap: 10px;
+	column-gap: 9px;
 	overflow-x: scroll;
+	padding: 5px;
 }
 
 .day-flex {
@@ -20,9 +21,14 @@
 
 .course {
 	width: 100%;
-	border: 1px solid black;
-	border-radius: 5px;
+	border: 2px solid var(--main-transparent-color);
+	border-radius: 15px;
 	padding: 5px 0;
+	/* cursor: pointer; TODO: modal box on click */
+}
+
+.course:hover {
+	box-shadow: 0 0 0 4px var(--main-transparent-color);
 }
 
 .course h2 {
