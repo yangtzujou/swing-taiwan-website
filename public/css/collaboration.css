@@ -95,6 +95,10 @@
 	}
 	.grid-container > div {
 		margin-bottom: 10px;
+		max-height: 300px;
+	}
+	.collaboration-overlay {
+		max-height: 300px;
 	}
 }
 
