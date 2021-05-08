@@ -20,27 +20,33 @@
     <div class="box form">
       <form action="/taste">
 
-        <label for="name">姓名：</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <label for="name">姓名</label><br>
+        <input type="text" id="name" name="name" placeholder="王小明" required><br><br>
 
-        <label for="gender">性別：</label>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">男</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">女</label>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">非二元性別</label><br><br>
+        <label for="gender">性別</label><br>
+        <label for="male" class="radio-container">男
+          <input type="radio" id="male" name="gender" value="male">
+          <span class="checkmark"></span>
+        </label>
+        <label for="female" class="radio-container">女
+          <input type="radio" id="female" name="gender" value="female">
+          <span class="checkmark"></span>
+        </label>
+        <label for="other" class="radio-container">非二元性別
+          <input type="radio" id="other" name="gender" value="other">
+          <span class="checkmark"></span>
+        </label><br>
 
-        <label for="age">年齡：</label>
+        <label for="age">年齡</label><br>
         <input type="number" id="age" name="age" min="16" max="99"><br><br>
 
-        <label for="phone">手機：</label>
+        <label for="phone">手機</label><br>
         <input type="tel" id="phone" name="phone" placeholder="0912-345-678" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br><br>
 
-        <label for="email">電子信箱：</label>
-        <input type="email" id="email" name="email"><br><br>
+        <label for="email">電子信箱</label><br>
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com"><br><br>
 
-        <label for="sessions">選擇場次：</label>
+        <label for="sessions">選擇場次</label><br>
         <select name="sessions" id="sessions">
           <option value="0507">2021/05/07（五）</option>
           <option value="0514">2021/05/14（五）</option>
@@ -49,11 +55,15 @@
         </select>
         <br><br>
 
-        <label for="role">報名角色：</label>
-        <input type="radio" id="leader" name="role" value="leader">
-        <label for="leader">Leader</label>
-        <input type="radio" id="follower" name="role" value="follower">
-        <label for="follower">Follower</label><br><br>
+        <label for="role">報名角色</label><br>
+        <label for="leader" class="radio-container">Leader
+          <input type="radio" id="leader" name="role" value="leader">
+          <span class="checkmark"></span>
+        </label>
+        <label for="follower" class="radio-container">Follower
+          <input type="radio" id="follower" name="role" value="follower">
+          <span class="checkmark"></span>
+        </label><br>
 
         <button type="submit" value="submit" class="btn dark-btn">我要報名體驗</button>
       </form>

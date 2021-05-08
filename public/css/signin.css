@@ -6,17 +6,17 @@
 	text-align: center;
 }
 
+.signin-area {
+	width: 250px;
+	margin: 0 auto;
+}
+
 input[type="email"],
 input[type="password"] {
 	display: block;
-	width: 250px;
-	margin: 0 auto;
+	width: 100%;
 	padding: 12px 20px;
 	border: 1px solid var(--main-light-color);
-}
-
-input:focus {
-	outline: none;
 }
 
 input[type="email"] {
@@ -28,22 +28,53 @@ input[type="password"] {
 	border-radius: 0 0 10px 10px;
 }
 
-a {
-	text-decoration: none;
+.remember-forgot {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.login-remember {
+	float: left;
+}
+
+.forgot-password {
+	float: right;
+}
+
+.form-divider {
+	display: flex;
+}
+
+.form-divider hr {
+	width: 40%;
+	height: 1px;
+	margin: auto;
+}
+
+.signin-area .btn {
+	margin: 0;
 }
 
 .btn .text {
 	display: inline-block;
-	width: 200px;
+	width: 180px;
 	text-align: center;
+	font-size: 1rem;
+}
+
+.btn.login-facebook,
+.btn.login-gmail {
+	width: 100%;
 }
 
 .btn.login-facebook {
+	margin-top: 20px;
 	margin-bottom: 5px;
 }
 
 .btn.login-gmail {
 	margin-top: 5px;
+	margin-bottom: 20px;
 }
 
 .btn.login-facebook i {
@@ -56,6 +87,10 @@ a {
 
 .signin-container p {
 	margin-bottom: 1rem;
+}
+
+a {
+	text-decoration: none;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

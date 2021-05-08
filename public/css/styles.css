@@ -44,6 +44,10 @@ p {
 	line-height: 1.8;
 }
 
+input:focus {
+	outline: none;
+}
+
 ::selection {
 	color: var(--main-light-color);
 	background: var(--main-dark-color);

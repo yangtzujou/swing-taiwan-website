@@ -10,13 +10,15 @@
 .box.form {
 	padding: 20px;
 	max-width: 400px;
+	justify-self: center;
+	margin: 0 auto;
 }
 
 .form form {
 	width: 100%;
-	padding: 20px;
+	padding: 20px 30px;
 	border-radius: 30px;
-	border: 1px solid var(--main-dark-color);
+	border: 5px double var(--main-dark-color);
 	display: inline-block;
 }
 
@@ -35,6 +37,75 @@
 
 .form .btn {
 	float: right;
+}
+
+.form input,
+.form select {
+	border: 1px solid var(--main-dark-color);
+	border-radius: 5px;
+	height: 30px;
+	padding: 0 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+	width: 100%;
+}
+
+.radio-container {
+	display: block;
+	position: relative;
+	padding-left: 28px;
+	margin: 3px 0;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 1.6px;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+	background-color: var(--main-light-color);
+}
+
+.radio-container input:checked ~ .checkmark {
+	background-color: var(--main-dark-color);
+}
+
+.checkmark::after {
+	content: "";
+	position: absolute;
+	display: none;
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: white;
+}
+
+.radio-container input:checked ~ .checkmark::after {
+	display: block;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
