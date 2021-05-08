@@ -1,7 +1,7 @@
 .week-flex {
 	display: flex;
 	flex-direction: row;
-	column-gap: 9px;
+	/* column-gap: 9px; */
 	overflow-x: scroll;
 	padding: 5px;
 }
@@ -9,14 +9,16 @@
 .day-flex {
 	display: flex;
 	flex-direction: column;
-	row-gap: 10px;
+	/* row-gap: 10px; */
 	min-width: 95px;
 	text-align: center;
+	margin-right: 9px;
 }
 
 .day {
 	background-color: var(--main-transparent-color);
 	padding: 5px;
+	margin-bottom: 10px;
 }
 
 .course {
@@ -24,6 +26,7 @@
 	border: 2px solid var(--main-transparent-color);
 	border-radius: 15px;
 	padding: 5px 0;
+	margin-bottom: 10px;
 	/* cursor: pointer; TODO: modal box on click */
 }
 
