@@ -1,6 +1,6 @@
 .signin-container {
 	margin: 1rem auto;
-	border: 1px solid var(--main-dark-color);
+	border: 5px double var(--main-dark-color);
 	border-radius: 30px;
 	max-width: 500px;
 	text-align: center;
