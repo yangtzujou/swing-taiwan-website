@@ -1,3 +1,11 @@
+//// alert message
+
+// alert("這個可行!");
+
+// const swal = require("sweetalert");
+
+
+
 //// cover img carousel
 
 const imgs = document.getElementById("imgs");

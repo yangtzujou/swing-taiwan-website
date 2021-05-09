@@ -1,5 +1,6 @@
 const express = require("express");
 const ejs = require("ejs");
+// const swal = require("sweetalert");
 
 const app = express();
 
@@ -9,6 +10,7 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res) {
   res.render("home");
+  // swal("Good job!", "You clicked the button!", "info");
 })
 
 app.get("/about", function(req, res) {
