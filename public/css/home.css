@@ -75,7 +75,8 @@ section {
 
 .intro-video-wrap {
 	width: 100%;
-	aspect-ratio: 16/9;
+	padding-bottom: 56.25%;
+	/* aspect-ratio: 16/9; */
 	position: relative;
 }
 
@@ -305,10 +306,11 @@ section {
 @media (max-width: 575.98px) {
 	#course .style-container {
 		flex-direction: column;
-		row-gap: 1rem;
+		/* row-gap: 1rem; */
 	}
 	#course .style {
 		width: 100%;
+		margin-bottom: 1rem;
 	}
 	.style-overlay .text p {
 		font-size: 1rem;
