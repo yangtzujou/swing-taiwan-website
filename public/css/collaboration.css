@@ -3,7 +3,8 @@
 	grid-template-columns: repeat(8, 1fr);
 	grid-template-rows: repeat(6, 1fr);
 	grid-gap: 10px;
-	aspect-ratio: 4/3;
+	/* aspect-ratio: 4/3; */
+	min-height: 546px;
 }
 
 .grid-container > div {
