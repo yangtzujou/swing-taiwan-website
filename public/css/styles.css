@@ -116,6 +116,7 @@ footer {
 	width: 100％;
 }
 
+.fa-github,
 .fa-envelope,
 .fa-facebook-f,
 .fa-instagram,
@@ -124,6 +125,7 @@ footer {
 	padding: 5px;
 }
 
+.fa-github:hover,
 .fa-envelope:hover,
 .fa-facebook-f:hover,
 .fa-instagram:hover,

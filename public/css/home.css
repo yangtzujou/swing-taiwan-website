@@ -1,5 +1,6 @@
 section {
 	width: 100vw;
+	position: relative;
 }
 
 .dark-section {
@@ -10,6 +11,13 @@ section {
 .light-section {
 	background-color: var(--main-light-color);
 	background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+}
+
+.github {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 10;
 }
 
 .cover-img-carousel {
